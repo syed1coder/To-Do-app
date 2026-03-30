@@ -1,7 +1,7 @@
-# To-Do-app
-a application to create tasks 
-to acesss or run the application go to "to-do\release-builds\todo-app-win32-x64"
-u will find a file type application called to-do app
-run it 
-hope u like it 
-thank you
+Retro To-Do List 📝A sleek, standalone desktop application built with Electron for managing your daily tasks with a classic aesthetic.✨ FeaturesDesktop Native: Runs as a dedicated Windows application with a custom notebook icon.Retro Design: Minimalist interface focused on productivity.No Menus: Clean UI with an auto-hidden menu bar for a distraction-free experience.Fixed Geometry: Designed with a specific $600 \times 800$ non-resizable window for consistent layout.🚀 Getting StartedPrerequisitesNode.js: Ensure you have Node.js installed to manage dependencies.Windows: Required to build the .exe installer using the electron-winstaller toolkit.InstallationClone the repository:Bashgit clone https://github.com/fetsluckyou/todo-app.git
+cd todo-app
+Install dependencies:Bashnpm install
+DevelopmentTo run the app in development mode:Bashnpm start
+📦 Building & DeploymentTo transform your code into a shareable Windows installer, follow these steps:Package the App:Run the following command to create a production-ready build in the release-builds/ folder:Bashnpm run package-win
+Create the Installer:Generate the TodoAppInstaller.exe inside the installer/ directory:Bashnpm run create-installer
+Distribute:Upload the resulting .exe from the installer/ folder to your GitHub Releases page so others can download and install it.🛠️ Technical OverviewCore: Electron ^28.1.0.Frontend: HTML5, CSS3, and Vanilla JavaScript.Installer Engine: electron-winstaller for creating Squirrel-based Windows installations.Version Control: Optimized for Git LFS to handle binary files like .exe and .nupkg.📄 LicenseThis project is licensed under the ISC License.
